@@ -5,7 +5,7 @@ class Shoe
   BRANDS = []
 
   def initialize(brand)
-  	@brand = brand # defines instance variable
+  	@brand = brand 
   	if BRANDS.include?(@brand) != true
   		BRANDS << @brand
   	end
