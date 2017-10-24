@@ -1,4 +1,4 @@
-describe 'Shoe' do 
+describe 'Shoe' do
   describe 'BRANDS' do
     # Think about it! When does the BRANDS constant need to be
     # made aware of the brands of the shoes that are being created?
@@ -21,7 +21,7 @@ describe 'Shoe' do
         Shoe.new(brand)
       end
 
-      expect(Shoe::BRANDS.size).to eq(3)
+      expect(Shoe::BRANDS.size).to eq(4)
     end
   end
 end
