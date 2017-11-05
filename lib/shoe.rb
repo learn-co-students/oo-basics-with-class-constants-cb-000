@@ -8,6 +8,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand # only keeps track of unique brands
+
+    BRANDS << brand unless BRANDS.include?(brand) # keeps track of unique brands by checking to see if brand is already in BRANDS array
   end
 end
