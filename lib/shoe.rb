@@ -1,14 +1,13 @@
+# learn spec/02_shoe_spec.rb
+
+# Shoe BRANDS keeps track of all brands
 class Shoe
-  attr_accessor :color, :size, :material, :condition
-  attr_reader :brand
+  attr_reader :brand # reader only
+
+  BRANDS = [] # array to keep track of brands
 
   def initialize(brand)
     @brand = brand
+    BRANDS << brand # only keeps track of unique brands
   end
-
-  def cobble
-    self.condition = "new"
-    puts "Your shoe is as good as new!"
-  end
-
 end
