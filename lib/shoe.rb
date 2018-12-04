@@ -8,6 +8,8 @@ class Shoe
     @brand = brand
     BRANDS << brand
     BRANDS.uniq!
+# Fla Tyrone uses this method:
+# BRANDS << brand unless BRANDS.include?(brand)
   end
 
   def cobble
