@@ -3,7 +3,7 @@ class Book
   attr_reader :title
 
   GENRES = []
-  BRANDS = []
+  
   
   def initialize(title)
     @title = title
@@ -22,13 +22,5 @@ class Book
     @genre
   end
 
-  def brand=(brand)
-    @brand = brand
-    BRANDS << brand 
-  end
-
-  def brand
-    @brand
-  end
   
 end
